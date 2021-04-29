@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+    <AssetsDir>$(MSBuildThisFileDirectory)</AssetsDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Veldrid" Version="4.8.0" />
+    <PackageReference Include="Veldrid.SDL2" Version="4.8.0" />
+    <PackageReference Include="Veldrid.SPIRV" Version="1.0.14" />
+  </ItemGroup>
+
+
+
+  <ItemGroup>
+    <Reference Include="BootEngine">
+      <HintPath>..\..\..\BootEngine\BootEngine\bin\Release\x64\net5.0\BootEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="ImGui.NET">
+      <HintPath>..\..\..\BootEngine\BootEngine\bin\Release\x64\net5.0\ImGui.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="ImGuizmo.NET">
+      <HintPath>..\..\..\BootEngine\BootEngine\bin\Release\x64\net5.0\ImGuizmo.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="ImNodes.NET">
+      <HintPath>..\..\..\BootEngine\BootEngine\bin\Release\x64\net5.0\ImNodes.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="ImPlot.NET">
+      <HintPath>..\..\..\BootEngine\BootEngine\bin\Release\x64\net5.0\ImPlot.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Leopotam.Ecs">
+      <HintPath>..\..\..\BootEngine\BootEngine\bin\Release\x64\net5.0\Leopotam.Ecs.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ContentWithTargetPath Include="..\SlimeSimulation\_deps\cimgui\win-x64\cimgui.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>cimgui.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="..\SlimeSimulation\_deps\cimplot\win-x64\cimplot.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>cimplot.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="..\SlimeSimulation\_deps\cimguizmo\win-x64\cimguizmo.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>cimguizmo.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="..\SlimeSimulation\_deps\cimnodes\win-x64\cimnodes.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>cimnodes.dll</TargetPath>
+    </ContentWithTargetPath>
+
+
+    <Content Include="$(AssetsDir)\shaders\**">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Link>%(RecursiveDir)\%(FileName)%(Extension)</Link>
+    </Content>
+  </ItemGroup>
+
+</Project>
