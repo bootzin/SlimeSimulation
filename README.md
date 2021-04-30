@@ -46,10 +46,10 @@ The following settings are available for customization:
 Here are some examples that I managed to achieve. Please feel free to open a github issue to post pictures of what you've got!
 
 <p float="left">
-  <img src="SlimeSimulation/images/Screenshot_5.jpg" width="450" />
-  <img src="SlimeSimulation/images/Screenshot_11.jpg" width="450" /> 
-  <img src="SlimeSimulation/images/Screenshot_9.jpg" width="450" />
-  <img src="SlimeSimulation/images/Screenshot_6.jpg" width="450" />
+  <img src="SlimeSimulation/images/Screenshot_5.jpg" width="420" />
+  <img src="SlimeSimulation/images/Screenshot_11.jpg" width="420" /> 
+  <img src="SlimeSimulation/images/Screenshot_9.jpg" width="420" />
+  <img src="SlimeSimulation/images/Screenshot_6.jpg" width="420" />
 </p>
 
 ## License
