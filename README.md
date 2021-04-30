@@ -38,7 +38,9 @@ The following settings are available for customization:
 - Per species sensor angle
 
  \* Makes all species have the white color. As the trail tracking is done in the shader, the color is used to decide wether two particles are from the same species or not. With this option enabled, different species would follow their trails as if they were the same.
+ 
 ** Sometimes, when particles cross with another species trail, the added color saturates and becomes white. To avoid this, this option desaturates their colors. It is enabled by default.
+
 **\* Steps per frame adjust how fast the simulation runs. It also affects how fast the trail evaporates. I recommend setting its value as high as possible, and then adjusting diffuse/decay rates, as well as trail weight. The option to auto-determine this will adjust its value depending on FPS. Keep in mind that since the simulation start at 100,000 agents it may be taxing on low end computers even at 1 step per frame. In that case, reduce the resolution and adjust the amount of agents to what best suits you.
 
 ## Pictures
