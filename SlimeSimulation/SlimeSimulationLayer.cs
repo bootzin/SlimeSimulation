@@ -45,6 +45,8 @@ namespace SlimeSimulation
 		private readonly CommandList cl = ResourceFactory.CreateCommandList();
 		private readonly Random rand = new Random();
 
+		public const uint MAXIMUM_AGENT_AMOUNT = 10000000u;
+
 		public override void OnAttach()
 		{
 			numSpecies = 3;
@@ -93,7 +95,7 @@ namespace SlimeSimulation
 
 			uint sizeofSlimeAgent = (uint)System.Runtime.InteropServices.Marshal.SizeOf<SlimeAgent>();
 			agentBuffer = ResourceFactory.CreateBuffer(new BufferDescription(
-				sizeofSlimeAgent * (uint)settings.NumAgents,
+				sizeofSlimeAgent * MAXIMUM_AGENT_AMOUNT,
 				BufferUsage.StructuredBufferReadWrite,
 				sizeofSlimeAgent));
 			var sizeofSpeciesSettings = System.Runtime.InteropServices.Marshal.SizeOf<SlimeSettings.SpeciesSettings>();
