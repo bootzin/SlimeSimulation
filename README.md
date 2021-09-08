@@ -1,6 +1,6 @@
 ﻿# Slime Simulation
 
-Slime Simulation is a project I developed in my custom engine ([Boot Engine](https://github.com/bootzin/BootEngine)) that simulates the behaviour of a slime mold, forming beautiful 'organic' patterns.
+Slime Simulation is a project I developed in my custom engine ([Boot Engine](https://github.com/bootzin/BootEngine)) that simulates the behaviour of a slime mold, forming beautiful 'organic' patterns. Inspired by SebLague's [Unity Version](https://github.com/SebLague/Slime-Simulation).
 
 ## How does it work?
 
